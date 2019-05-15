@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql://10.36.144.61/studentsystem
+
+dubbo:
+  application:
+    name: student_service
+  registry:
+    address: zookeeper://10.36.144.61
+  protocol:
+    name: dubbo
+    port: 20880
+
